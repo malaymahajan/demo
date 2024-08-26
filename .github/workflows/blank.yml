@@ -25,7 +25,7 @@ jobs:
     - name: Run Tests on All Devices from JSON
       run: |
           # Read the JSON file and generate commands
-          jq -c '.[]' ios_environment.json | while IFS= read -r device; do
+          jq -c '.[]' ios_combinations.json | while IFS= read -r device; do
             DEVICE_NAME=$(echo "$device" | jq -r '.device')
             PLATFORM_VERSION=$(echo "$device" | jq -r '.version')
             APP_URL=$(echo "$device" | jq -r '.env')
