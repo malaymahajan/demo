@@ -1,0 +1,46 @@
+name: Run IOS Tests on LambdaTest
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'
+
+    - name: Install Robot Framework and Dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install robotframework-seleniumlibrary
+        pip install robotframework-appiumlibrary
+        sudo apt-get install jq
+
+    - name: Run Tests on All Devices from JSON
+      run: |
+          # Read the JSON file and generate commands
+          jq -c '.[]' ios_environment.json | while IFS= read -r device; do
+            DEVICE_NAME=$(echo "$device" | jq -r '.device')
+            PLATFORM_VERSION=$(echo "$device" | jq -r '.version')
+            APP_URL=$(echo "$device" | jq -r '.env')
+          
+            # Construct and run the Robot Framework command
+            echo "Running tests on $DEVICE_NAME with IOS $PLATFORM_VERSION and App URL $APP_URL"
+            pabot --testlevelsplit -i demo --variable deviceName:"$DEVICE_NAME" --variable platformVersion:"$PLATFORM_VERSION" --variable app:"$APP_URL"  Mobile/IOS/KC/TestCases/HallOfFans/hall_of_fans_test.robot
+          done
+      env:
+          LAMBDATEST_USERNAME: ${{ secrets.LAMBDATEST_USERNAME }}
+          LAMBDATEST_ACCESS_KEY: ${{ secrets.LAMBDATEST_ACCESSKEY }}
+    
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-results
+        path: Mobile/Android/KC/TestCases/Login/log.html
