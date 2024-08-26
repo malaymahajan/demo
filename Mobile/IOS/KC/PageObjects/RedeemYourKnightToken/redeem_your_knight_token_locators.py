@@ -1,0 +1,8 @@
+redeem_your_knight_token_title='//XCUIElementTypeStaticText[@name="REDEEM YOUR KNIGHT TOKENS"]'
+my_rewards_button = '//XCUIElementTypeButton[@name="MY REWARDS"]'
+redeemed_coupen = 'xpath=//XCUIElementTypeStaticText[@name="title"]'
+tokens_left_redeem_screen = '(//XCUIElementTypeStaticText[@name="Tokens Left"]//..//../XCUIElementTypeStaticText)[2]'
+tokens_earned_redeem_screen='(//XCUIElementTypeStaticText[@name="Tokens Earned"]//..//../XCUIElementTypeStaticText)[2]'
+redeem_terms_and_condition_button = '//XCUIElementTypeButton[@name="*Terms and Conditions"]'
+terms_and_condition_webview_header = '//XCUIElementTypeNavigationBar[@name="TERMS AND CONDITIONS"]'
+reward_redemption_paragraph = '//XCUIElementTypeStaticText[@name=": Members of the Loyalty Program can redeem multiple awards at any time, subject to availability of product and Knight Tokens"]'

@@ -1,0 +1,17 @@
+[
+    {
+        "env": "lt://APP1016061291724664628238139",
+        "device": "iPhone 13",
+        "version": "16.0"
+    },
+    {
+        "env": "lt://APP1016061291724664628238139",
+        "device": "iPhone 14 Pro",
+        "version": "17.0"
+    },
+    {
+        "env": "lt://APP1016061291724664628238139",
+        "device": "iPhone 15 Pro Max",
+        "version": "16.0"
+    }
+]

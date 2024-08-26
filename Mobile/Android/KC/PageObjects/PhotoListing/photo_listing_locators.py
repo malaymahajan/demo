@@ -1,0 +1,5 @@
+photos_option = '//android.widget.TextView[@resource-id="com.knightclub.app:id/tv_submenu_title" and @text="PHOTOS"]'
+photos_page = '//android.widget.TextView[@resource-id="com.knightclub.app:id/tv_title_new"]'
+photos_list = '//androidx.recyclerview.widget.RecyclerView[@resource-id="com.knightclub.app:id/rv_list"]/android.view.ViewGroup'
+photo_1 = '//androidx.recyclerview.widget.RecyclerView[@resource-id="com.knightclub.app:id/rv_list"]/android.view.ViewGroup[index]'
+last_photo = '//android.widget.TextView[@resource-id="com.knightclub.app:id/tv_title" and @text="KNIGHTS TRAIN AHEAD OF THE MLC CHALLENGE | MLC 2023"]'

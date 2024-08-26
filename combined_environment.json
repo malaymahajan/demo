@@ -1,0 +1,35 @@
+{
+  "android": {
+    "env": {
+      "staging": "bs://ddea3488fa7b5acb9aa6c273ea05f5ad16cefd4a",
+      "qa": "bs://ddea3488fa7b5acb9aa6c273ea05f5ad16cefd4a",
+      "prod": "bs://ddea3488fa7b5acb9aa6c273ea05f5ad16cefd4a"
+    },
+    "device": {
+      "Galaxy S23+": "Galaxy S23+",
+      "Galaxy S22 5G": "Galaxy S22 5G",
+      "Galaxy S24+": "Galaxy S24+"
+    },
+    "version": {
+      "12.0": "12.0",
+      "13.0": "13.0",
+      "11.0": "14.0"
+    }
+  },
+  "ios": {
+    "env": {
+      "staging": "lt://APP1016061291724664628238139",
+      "qa": "lt://APP1016061291724664628238139",
+      "prod": "lt://APP1016061291724664628238139"
+    },
+    "device": {
+      "iPhone 14": "iPhone 13",
+      "iPhone 14 Pro": "iPhone 14 Pro",
+      "iPhone 15 Pro Max": "iPhone 15 Pro Max"
+    },
+    "version": {
+      "16.0": "16.0",
+      "17.0": "17.0"
+    }
+  }
+}

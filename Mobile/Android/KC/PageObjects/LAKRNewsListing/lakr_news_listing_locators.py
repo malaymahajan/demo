@@ -1,0 +1,5 @@
+latest_news_view_more_button = '(//android.widget.Button[@resource-id="com.knightclub.app:id/btn_more"])[1]'
+latest_news_page = '//android.widget.TextView[@resource-id="com.knightclub.app:id/tv_title_new"]'
+featured_article = '(//androidx.recyclerview.widget.RecyclerView[@resource-id="com.knightclub.app:id/rv_list"])[3]'
+featured_article_view_more_button = '(//android.widget.Button[@resource-id="com.knightclub.app:id/btn_more"])[2]'
+featured_article_page = '//android.widget.TextView[@resource-id="com.knightclub.app:id/tv_title_new"]'

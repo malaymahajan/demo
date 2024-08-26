@@ -1,0 +1,7 @@
+faq_button = '//XCUIElementTypeButton[@name="faq button"]'
+faq_title = '//XCUIElementTypeStaticText[@name="FAQ’S"]'
+faq_question = '//XCUIElementTypeStaticText[@name="What are Knight Tokens? How can you earn them?"]'
+faq_first_closing_up_arrow='(//XCUIElementTypeButton[@name="closing up arrow"])[1]'
+hall_of_fans = '//XCUIElementTypeStaticText[@name="HALL OF FANS"]'
+check_your_rankings_button = '//XCUIElementTypeButton[@name="CHECK YOUR RANKING"]'
+redemption = '//XCUIElementTypeStaticText[@name="REDEMPTION"]'

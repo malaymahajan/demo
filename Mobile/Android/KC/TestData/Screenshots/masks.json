@@ -1,0 +1,4 @@
+{"page": "all",
+  "type": "pattern",
+  "pattern": ".*[a-zA-Z0-9].*"
+}
